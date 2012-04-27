@@ -1,4 +1,4 @@
-Header, SHR_soundeffet_2011_0412
+Header, SHR#U_soundeffet_2011_0427
 ## Group for phone ##
 Phone_Default,/system/etc/soundimage/Sound_Phone_Original.txt
 Phone_Handset_Dualmic,/system/etc/soundimage/Sound_Phone_Original_REC.txt

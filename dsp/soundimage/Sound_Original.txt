@@ -2828,6 +2828,32 @@ w 30 00 00 # Page Select Register
 w 30 52 00 # ADC Fine Gain Adjust Register
 w 30 53 00 # Left ADC Channel Volume Control Register
 w 30 54 00 # Right ADC Channel Volume Control Register
+w 30 00 01 # Page Select Register
+w 30 01 08 # Power Configuration Register
+w 30 02 21 # LDO Control Register
+w 30 03 00 # Playback Configuration Register 1
+w 30 04 00 # Playback Configuration Register 2
+w 30 14 25 # Headphone Driver Startup Control Register
+w 30 47 32 # Analog Input Quick Charging Configuration Register
+w 30 00 00 # Page Select Register
+w 30 3f 00 # DAC Channel Setup Register 1
+w 30 00 01 # Page Select Register
+w 30 09 00 # Output Driver Power Control Register
+w 30 10 00 # HPL Driver Gain Setting Register
+w 30 11 00 # HPR Driver Gain Setting Register
+w 30 12 00 # LOL Driver Gain Setting Register
+w 30 13 00 # LOR Driver Gain Setting Register
+w 30 00 00 # Page Select Register
+w 30 40 0c # DAC Channel Setup Register 2
+w 30 41 00 # Left DAC Channel Digital Volume Control Register
+w 30 41 00 # Left DAC Channel Digital Volume Control Register
+w 30 51 00 # ADC Channel Setup Register
+w 30 3f 16 # DAC Channel Setup Register 1
+w 30 00 01 # Page Select Register
+w 30 33 00 # MICBIAS Configuration Register
+w 30 01 00 # Power Configuration Register
+w 30 02 28 # LDO Control Register
+w 30 00 00 # Page Select Register
 w 30 41 00 # Left DAC Channel Digital Volume Control Register
 w 30 42 00 # Right DAC Channel Digital Volume Control Register
 w 30 44 1f # DRC Control Register 1
@@ -2850,15 +2876,3 @@ w 30 61 68 # Right Channel AGC Control Register 4
 w 30 62 a8 # Right Channel AGC Control Register 5
 w 30 63 06 # Right Channel AGC Control Register 6
 w 30 64 00 # Right Channel AGC Control Register 7
-w 30 00 01
-w 30 10 00
-w 30 11 00
-w 30 12 00
-w 30 13 00
-w 30 09 00
-w 30 00 00
-w 30 51 00
-w 30 3F 16
-w 30 00 01
-w 30 01 00
-w 30 02 28

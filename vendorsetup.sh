@@ -20,6 +20,5 @@
 # In particular, you can add lunch options with the add_lunch_combo
 # function: add_lunch_combo generic-eng
 
-add_lunch_combo full_shooteru-userdebug
-add_lunch_combo full_shooteru-eng
-
+add_lunch_combo htc_shooteru-userdebug
+add_lunch_combo htc_shooteru-eng
