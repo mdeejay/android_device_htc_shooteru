@@ -140,7 +140,8 @@ endif
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_KERNEL):kernel \
-    device/htc/shooteru/prebuilt/bcmdhd.ko:system/lib/modules/bcmdhd.ko
+    device/htc/shooteru/prebuilt/bcmdhd.ko:system/lib/modules/bcmdhd.ko \
+    device/htc/shooteru/prebuilt/kineto_gan.ko:system/lib/modules/kineto_gan.ko
 
 # common msm8660 configs
 $(call inherit-product, device/htc/msm8660-common/msm8660.mk)

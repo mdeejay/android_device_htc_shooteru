@@ -88,7 +88,7 @@ ro.phone_storage=0
 ro.emmc=1
 
 # System property for cabl
-ro.qualcomm.cabl=0
+ro.qualcomm.cabl=1
 
 ro.com.google.locationfeatures=1
 
