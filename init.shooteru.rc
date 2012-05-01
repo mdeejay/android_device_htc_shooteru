@@ -127,7 +127,7 @@ on init
     chown system system /sys/class/optical_sensors/proximity/ps_led
     chown system system /sys/class/optical_sensors/proximity/ps_test_mode
 
-    # for CM performance
+    # for performance
     chown root system /sys/devices/system/cpu/cpu0/cpufreq/scaling_available_frequencies
     chown root system /sys/devices/system/cpu/cpu0/cpufreq/scaling_available_governors
     chown root system /sys/devices/system/cpu/cpu0/cpufreq/scaling_cur_freq
@@ -141,13 +141,6 @@ on init
     # for charging function
     chown radio radio /sys/module/htc_battery_8x60/parameters/phone_call
     chmod 0660 /sys/module/htc_battery_8x60/parameters/phone_call
-
-    # to enable low charge current in voice call
-    chown radio radio /sys/class/power_supply/battery/charger_control
-    chmod 0660 /sys/class/power_supply/battery/charger_control
-
-    # for Slate charging timer
-    chown radio /sys/class/power_supply/battery/charger_timer
 
     chown system /sys/devices/platform/rs300000a7.65536/force_sync
     chown system /sys/devices/platform/rs300000a7.65536/sync_sts
@@ -320,6 +313,16 @@ service qmuxd /system/bin/qmuxd
 
 service netmgrd /system/bin/netmgrd
     class late_start
+
+# CABL
+service abld /system/bin/mm-abl-daemon
+    disabled
+
+on property:ro.qualcomm.cabl=1
+    start abld
+
+on property:ro.qualcomm.cabl=0
+    stop abld
 
 on property:sys.radio.shutdown=true
    exec /system/bin/sh /system/etc/init.qcom.efs.sync.sh
